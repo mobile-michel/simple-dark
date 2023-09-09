@@ -2,22 +2,20 @@
 <html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="{{ site.authorName }}">
-    <meta name="description" content="{{ site.description }}">
-    <link
-      rel="icon"
-      href="{{ site.favicon }}"
-      type="image/svg+xml">
-    <title>{{ title }} - {{ site.name }}</title>
     <link rel="stylesheet" href="/assets/{{ stylesheet }}">
+    <title>Dark Theme Toggler CSS</title>
   </head>
   <body>
     {% include 'header' %}
-    <main>
+    <div class="container">
       <h1>{{ title }}</h1>
+      <div class="toggle-container">
+        <input type="checkbox" id="switch" /><label for="switch">Dark Mode</label>
+      </div>
       {{ content }}
-    </main>
-    {% include 'footer' %}
+    </div>
+    <script src="/assets/script.js"></script>
   </body>
 </html>
