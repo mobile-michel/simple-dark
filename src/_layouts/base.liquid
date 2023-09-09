@@ -10,6 +10,7 @@
       href="{{ site.favicon }}"
       type="image/svg+xml">
     <title>{{ title }} - {{ site.name }}</title>
+    <link rel="stylesheet" href="/assets/simple.css">
     <link rel="stylesheet" href="/assets/{{ stylesheet }}">
   </head>
   <body>
@@ -19,5 +20,6 @@
       {{ content }}
     </main>
     {% include 'footer' %}
+    <script src="/assets/{{ javascript }}"></script>
   </body>
 </html>
